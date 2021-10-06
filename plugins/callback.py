@@ -70,7 +70,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         admins = await get_admins(Config.CHAT)
         if query.data.startswith("info"):
             me, you = query.data.split("_")
-            text="Join @subin_works"
+            text="Join @pr_readme"
             if you == "volume":
                 await query.answer()
                 await query.message.edit_reply_markup(reply_markup=await volume_buttons())
@@ -402,8 +402,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data=="help":
             buttons = [
                 [
-                    InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-                    InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot'),
+                    InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/pr_readme'),
+                    InlineKeyboardButton('🧩 Source', url='https://github.com/agoriadmin'),
                 ]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
