@@ -51,7 +51,7 @@ IST = pytz.timezone(Config.TIME_ZONE)
 if Config.DATABASE_URI:
     from database import db
 
-HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nIam A Bot Built To Play or Stream Videos In Telegram VoiceChats.\nI Can Stream Any YouTube Video Or A Telegram File Or Even A YouTube Live.</b>"
+HOME_TEXT = "<b>ഹേയ്.. [{}](tg://user?id={}) 🙋‍♂️\n\n മണി മാളികയിൽ പാട്ടു പാടാൻ നിയോഗിച്ചിരിക്കുന്ന ബോട്ട് ആണ് ഞാൻ എനിക്ക് എല്ലാ വീഡിയോ/ഓഡിയോ സ്ട്രീം ചെയ്യാൻ സാധിക്കും.</b>"
 admin_filter=filters.create(is_admin) 
 
 @Client.on_message(filters.command(['start', f"start@{Config.BOT_USERNAME}"]))
@@ -127,8 +127,8 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot')
+            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/pr_readme'),
+            InlineKeyboardButton('🧩 Source', url='https://github.com/agorirobot/vcplayer')
         ],
         [
             InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
@@ -186,8 +186,8 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🧩 Repository', url='https://github.com/subinps/VCPlayerBot'),
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),     
+            InlineKeyboardButton('🧩 Repository', url='https://github.com/agoriadmin'),
+            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/pr_readme'),     
         ],
         [
             InlineKeyboardButton("🎞 How to Deploy", url='https://youtu.be/mnWgZMrNe_0'),
